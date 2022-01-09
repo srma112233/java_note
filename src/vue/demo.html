@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue_first</title>
+</head>
+<body>
+
+    <!--View层-->
+    <div id="app">
+        {{message}}
+    </div>
+
+    <!--通过cdn方式，导入vue-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js"></script>
+    <script>
+        var vm = new Vue({
+           // 绑定元素
+           el: "#app",
+            //Model层
+            data:{
+               message:"hello vue"
+            }
+        });
+    </script>
+</body>
+</html>
